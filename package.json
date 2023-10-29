@@ -1,0 +1,23 @@
+{
+  "name": "node-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdul-wahab619/freecodecamp-NodeJs-ExpressJs-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdul-wahab619/freecodecamp-NodeJs-ExpressJs-/issues"
+  },
+  "homepage": "https://github.com/abdul-wahab619/freecodecamp-NodeJs-ExpressJs-#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
