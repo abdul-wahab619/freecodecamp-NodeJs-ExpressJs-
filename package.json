@@ -4,7 +4,8 @@
   "description": "",
   "main": "1-intro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev" : "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/abdul-wahab619/freecodecamp-NodeJs-ExpressJs-#readme",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
