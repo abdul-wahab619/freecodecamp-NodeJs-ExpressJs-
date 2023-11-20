@@ -2,7 +2,7 @@
   "name": "node-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "1-intro.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev" : "nodemon app.js"
