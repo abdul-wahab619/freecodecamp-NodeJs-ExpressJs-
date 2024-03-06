@@ -1,0 +1,24 @@
+it is diferent from simple api because it is totally based on standard rules and best practices to use.
+
+let say we have a server and a computer which is a client
+-> client request something from server and get response from server
+=> all these things happening by some standard rules which we can say as a restfullapi.
+
+It works on:
+1. Server client architecture
+2. always respect all http methods
+=> GET POST PUT PATCH DELETE
+--------------------------------------------
+GET /user -> users data read and return data
+POST /user -> handle a new user
+PUT /user -> put something like upload a user image
+PATCH /user -> update the user
+DELETE /user -> delete the user
+--------------------------------------------
+
+
+
+=> Server side render which is SSR is that
+ like when a client request a html page and
+ server have that file and it renders frequently in no time which is SSR.
+
