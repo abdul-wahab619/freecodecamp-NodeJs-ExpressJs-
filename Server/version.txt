@@ -1,0 +1,30 @@
+// Version
+
+// 4.18.2
+
+1st Part -> 4
+2nd Part -> 18
+3rd Part -> 2
+
+// 3rd part => Minor Fixes (Optional Update)
+
+// 2nd part => Recommeded Bug Fix (Security Fixes)
+
+// 1st part => Major Release / Breaking Update => also effect the codes with previous versions it may or may not be happen (Optional Update)
+
+^4.18.2
+-> 4.18.3
+-> 4.19.5
+-> 4.18.4
+-> 4.19.3
+
+=> 5.19.2 not possible
+~4.18.2
+-> 4.18.3
+-> 4.18.2
+-> 4.18.4
+-> 4.18.5
+
+=> 4.19.1 => not possible
+
+
