@@ -1,0 +1,16 @@
+what is headers?
+HTTP headers let the client and the server pass additional information 
+with an HTTP request or response. An HTTP header consists of its case-insensitive name followed by a colon ( : ),
+then by its value. Whitespace before the value is ignored.
+
+In other words:
+let's a person want to sent a mail through post office
+then we put the mail data inside the envelop and inside the envelop
+we have the actual data and upper side of the envelop we have the information 
+which is called the sender infor and in http is called the headers
+
+HTTP headers are an important part of the API request and response
+as they represent the meta-data associated with API request and response.
+
+-> Headers carry information for the request and response Body.
+
