@@ -1,0 +1,10 @@
+HTTP STATUS CODES INFO
+
+1. Informational responses (100 - 199)
+1. Successfull responses (200 - 299)
+1. Redirctional  messages (300 - 399)
+1. client error responses (400 - 499)
+1. Server error responses (500 - 599)
+
+
+resources : https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

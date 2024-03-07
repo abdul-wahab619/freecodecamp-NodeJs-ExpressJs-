@@ -14,3 +14,5 @@
 1709820201896: GET: ::1: /api/users 
 1709820353487: GET: ::1: /api/users 
 1709820491248: GET: ::1: /api/users 
+1709821508748: GET: ::1: /api/users 
+1709821620616: POST: ::1: /api/users 
