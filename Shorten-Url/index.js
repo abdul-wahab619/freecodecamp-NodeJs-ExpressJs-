@@ -1,20 +1,30 @@
 import express from "express";
+import path from "path";
+import cookieParser from "cookie-parser";
+
+import { connectMongoDb } from "./connection.js";
+import { restrictToLoggedInUserOnly, checkAuth } from "./middlewares/auth.js";
+
+import URL from "./models/url.js";
+
 import urlRoute from "./routes/url.js";
 import staticRoute from "./routes/staticRouter.js";
-import path from "path";
-import { connectMongoDb } from "./connection.js";
-import URL from "./models/url.js";
+import userRoute from "./routes/user.js";
 
 const app = express();
 const PORT = 8002;
 
+// db connection
 connectMongoDb("mongodb://127.0.0.1:27017/short-url");
 
+// engine
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
 
+// middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 
 app.get("/test", async (req, res) => {
   const allUrls = await URL.find({});
@@ -22,9 +32,9 @@ app.get("/test", async (req, res) => {
     urls: allUrls,
   });
 });
-app.use("/url", urlRoute);
-
-app.use("/", staticRoute);
+app.use("/url", restrictToLoggedInUserOnly, urlRoute);
+app.use("/user", userRoute);
+app.use("/", checkAuth, staticRoute);
 
 app.get("/url/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
