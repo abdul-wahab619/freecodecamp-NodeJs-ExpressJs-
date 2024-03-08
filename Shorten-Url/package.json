@@ -1,0 +1,24 @@
+{
+  "name": "shorten-url",
+  "version": "1.0.0",
+  "description": "create a custom URL Shortener using nodejs and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "url",
+    "shortenerurl",
+    "nodejs",
+    "mongodb",
+    "customurl"
+  ],
+  "author": "Abdul Wahab",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
+    "nanoid": "^5.0.6"
+  }
+}
