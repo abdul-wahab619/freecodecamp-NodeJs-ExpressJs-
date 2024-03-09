@@ -33,7 +33,7 @@ async function handleUserLogin(req, res) {
 
   try {
     // Find the user by email
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email, password });
 
     // If user not found or password doesn't match, return error
     if (!user || user.password !== password) {
@@ -44,10 +44,8 @@ async function handleUserLogin(req, res) {
 
     // Generate JWT token
     const token = setUser(user);
-
     // Set JWT token as cookie
-    res.cookie("uid", token);
-
+    res.cookie("token", token);
     return res.redirect("/");
   } catch (error) {
     console.error("Error logging in user:", error);
