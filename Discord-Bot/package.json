@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Creating a discord bot in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord.js",
+    "discord",
+    "discordbot",
+    "bot",
+    "nodejs",
+    "reactjs",
+    "expressjs",
+    "mongodb",
+    "ai",
+    "web3"
+  ],
+  "author": "Abdul Wahab",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
+}
