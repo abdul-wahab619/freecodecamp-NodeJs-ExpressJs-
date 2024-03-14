@@ -2,9 +2,9 @@
   "name": "blog-app",
   "version": "1.0.0",
   "description": "Project - NodeJS Blogging Application with MongoDB ExpressJs EJS",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "express": "^4.18.3",
     "jsonwebtoken": "^9.0.2",
